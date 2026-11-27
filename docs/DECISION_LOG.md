@@ -88,3 +88,19 @@ This file records approved decisions and constraints. New decisions should be ap
 - Teachers will be allowed to edit guardian contact details from the teacher-facing Student Profile.
 - Exact editable fields, add/remove permissions, shared guardian record behaviour, save/audit interaction and any restrictions remain to be decided during T06 UX planning.
 - This does not grant access to fee, invoice or payment information and does not change the backend-permission requirement.
+
+## T06 Student Profile — approved design decisions (27 November 2026)
+- Layout: one vertically scrollable profile page with clearly separated sections.
+- Profile photo: optional, with initials fallback.
+- Student details shown: date of birth, calculated age, address, student phone, school and class/grade. Teacher edits are limited to these permitted details; student name, record status and enrolments remain outside this edit action.
+- Parent/Guardian: show name, relationship, phone, separate WhatsApp number, optional email and primary-contact designation. Teachers may add, edit and remove/unlink guardians.
+- Guardian master contact fields (name, phone, WhatsApp, email) are shared. Editing them updates all students linked to that guardian. Relationship and primary-contact designation are student-specific link attributes.
+- Removing a guardian from one student removes that link only. Delete the shared guardian record only when no student remains linked to it.
+- Guardian edits may include relationship and primary designation for the current student. Explicit Save/Cancel; record who changed what and when in the audit trail.
+- Guardian contact shortcuts: Call, WhatsApp and SMS when a usable phone number exists; Email only when an email address is present.
+- Enrolments: show the signed-in teacher's enrolments first, then other subjects in a separate read-only summary.
+- No Learning Overview section. Do not duplicate lesson notes on this profile.
+- Cross-teacher lesson notes are visible only when explicitly marked shared (AUTH-02 resolved for this policy).
+- Attendance: summary counts and recent attendance, with a link to the existing History screen. Unmarked remains distinct from Present.
+- No fees, invoices or payments in the teacher profile.
+- Prototype: `prototype/teacher-student-profile-v1.html`; it uses illustrative data and browser-local persistence, not production storage, authentication or multi-user sync.
