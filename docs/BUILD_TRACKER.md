@@ -2,7 +2,7 @@
 
 **Last updated:** 27 November 2026  
 **Current phase:** UX design + interactive prototype approval  
-**Next item:** Teacher Student Profile — teacher view (T06)
+**Next item:** Review T05 Student Directory v1.1 navigation; then T06 Student Profile
 
 Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress · ⬜ not started · ⏸ blocked by policy/decision
 
@@ -108,9 +108,8 @@ Notes:
 
 ## 6. Next actions
 
-1. Design Teacher Student Profile (T06) with the user.
-2. Build an interactive prototype using the approved design language, preserving every locked screen.
-3. Test it; revise until the user explicitly approves.
-4. Lock its specification and prototype in GitHub; update this tracker and handoff.
-5. Continue the remaining teacher screens, then the administrator workspace.
-6. Complete UX sign-off before beginning production implementation.
+1. Review and approve T05 Student Directory v1.1, preserving locked v1.
+2. Verify the Student ID hand-off into the matching T06 profile.
+3. Continue T06 review and obtain explicit approval before locking it.
+4. Proceed to the remaining teacher screens, then the administrator workspace.
+5. Complete UX sign-off before beginning production implementation.
