@@ -30,7 +30,7 @@ Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress ·
 | T03a | Lesson Notes pop-up | 🔒 | Existing pop-up design approved; preserve it exactly unless user asks to change it |
 | T04 | Save result / session detail | 🔄 | Determine which confirmation/status details are integrated into register/history versus needing a separate view |
 | T05 | Student Directory | 🔒 | v1 approved and locked; see `docs/locked-student-directory.md` and `prototype/teacher-student-directory-v1.html` |
-| T06 | Student Profile — teacher view | 🟡 NEXT | Discuss and prototype; teacher-permitted details, own enrolments and allowed history; no fee/invoice/payment amounts |
+| T06 | Student Profile — teacher view | 🟡 IN PROGRESS | Decisions recorded in `docs/DECISION_LOG.md`; prototype `prototype/teacher-student-profile-v1.html` awaiting user review and approval |
 | T07 | History — by date | 🔒 | Combined History screen v1.2; default view |
 | T08 | History — by student | 🔒 | Combined History screen v1.2; select a student, then show that student's dates; Present default, All records switch |
 | T09 | Lesson detail / edit | 🔄 | Detail pop-up pattern established; editing permissions/history behaviour to be confirmed in context |
@@ -71,7 +71,7 @@ Notes:
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
 | History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
-| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
+| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |\n| Teacher Student Profile prototype | `prototype/teacher-student-profile-v1.html` | 🟡 v1 prototype for review |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
 | History specification | `docs/locked-history.md` | 🔒 Approved and committed |
 | Whole project plan | `docs/PROJECT_PLAN.md` | ✅ Committed |
@@ -86,7 +86,7 @@ Notes:
 ## 5. Release gates (do not mark complete until actually resolved)
 
 - ⏸ Authentication/deployment identity method.
-- ⏸ Teacher visibility of other teachers' lesson notes.
+- Teacher visibility of other teachers' lesson notes: resolved — only explicitly shared notes are visible.
 - ⏸ Future-session reassignment policy and workflow.
 - ⏸ Provisional attendance expiry/confirmation policy.
 - ⏸ Student-level per-lesson fee scope.
