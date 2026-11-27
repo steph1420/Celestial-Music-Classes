@@ -83,3 +83,8 @@ This file records approved decisions and constraints. New decisions should be ap
 - Specification: `docs/locked-student-directory.md`. Prototype: `prototype/teacher-student-directory-v1.html`.
 - Preserve the approved screen. Any change requires a deliberate versioned revision.
 \n
+
+## T06 Student Profile — initial planning decision (27 November 2026)
+- Teachers will be allowed to edit guardian contact details from the teacher-facing Student Profile.
+- Exact editable fields, add/remove permissions, shared guardian record behaviour, save/audit interaction and any restrictions remain to be decided during T06 UX planning.
+- This does not grant access to fee, invoice or payment information and does not change the backend-permission requirement.
