@@ -70,7 +70,7 @@ Notes:
 | Project overview | `README.md` | ✅ Committed |
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
-| History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
+| History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |\n| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
 | History specification | `docs/locked-history.md` | 🔒 Approved and committed |
 | Whole project plan | `docs/PROJECT_PLAN.md` | ✅ Committed |
