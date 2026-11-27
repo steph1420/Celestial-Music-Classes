@@ -4,7 +4,7 @@
 **Repository:** `steph1420/Celestial-Music-Classes`  
 **Baseline date:** 27 November 2026  
 **Current phase:** Stage 4.5 — interactive UX prototyping and approval  
-**Next screen:** Teacher Student Directory
+**Next screen:** Teacher Student Profile — teacher view (T06)
 
 ## 1. Product vision
 
@@ -280,4 +280,4 @@ A static diagram is not a substitute for the interactive prototype requested by 
 
 ## 12. Project continuation
 
-The immediate next UX task is **Teacher Student Directory**. Start by discussing its purpose and proposed interactions, then produce a working interactive prototype. Do not skip directly to the next screen after a text mock-up. The existing Register, Lesson Notes pop-up and History are locked.
+The immediate next UX task is **Teacher Student Profile (T06)**. Teacher Student Directory v1 is approved and locked. Start by discussing the profile's purpose and permitted content, then produce a working interactive prototype. Do not skip directly to the next screen after a text mock-up. The existing Register, Lesson Notes pop-up and History are locked.
