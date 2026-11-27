@@ -67,21 +67,18 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Current task — Review T05 v1.1 profile navigation
+## 6. Current task — Review T05 Student Directory v1.1
 
-The user approved adding Student ID and an Open full student profile action to the T05 overview modal. Review `prototype/teacher-student-directory-v1.1.html` and confirm the selected record opens the matching T06 profile. The locked T05 v1 baseline must remain unchanged.
-
-Recommended discussion areas:
-- Which student identity and contact details should a teacher see?
-- How should multiple subject enrolments and teacher relationships be presented?
-- Which lesson/attendance information belongs on the profile versus the separate History screen?
-- What guardian information, if any, is visible to teachers?
-- Which actions are available: view only, edit permitted details, or navigate to enrolment-specific actions?
-- Fees, invoices and payments remain outside the teacher profile.
-- Cross-teacher lesson-note visibility remains unresolved under AUTH-02; do not expose other teachers' private notes by default.
-- Include loading, empty, error and permission-denied states.
-
-Build a working interactive prototype using the design language of the approved Register, History and Student Directory. Keep changes local to the new screen/prototype; do not rebuild any approved screens. Test the profile's visible information, navigation, theme and mobile layout before sharing.
+- The original T05 v1 remains approved and locked; do not overwrite it.
+- T05 v1.1 adds Student ID to the Student overview modal and an Open full student profile action.
+- The action passes the selected Student_ID to T06 using the `studentId` query parameter.
+- T05 and T06 seed data use matching IDs for the same eight students. Legacy v1 localStorage IDs are migrated; newly added demo students are given a stable ID and a blank matching profile is created on demand.
+- An unknown ID must never fall back to another student's profile.
+- Review prototype: `prototype/teacher-student-directory-v1.1.html`.
+- Review notes: `docs/student-directory-v1.1-review.md`.
+- T06 profile prototype: `prototype/teacher-student-profile-v1.html`.
+- Automated validation checks all prototype JavaScript, matching T05/T06 seeded IDs and the modal-to-profile ID hand-off.
+- Do not lock v1.1 until the user reviews and approves it.
 
 ## 7. Overall plan and architecture
 
