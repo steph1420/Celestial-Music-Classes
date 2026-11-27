@@ -243,21 +243,58 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;transition:backgr
 'use strict';
 const PROFILE_KEY='celestial-student-profile-v1-demo';
 const seed={
- theme:'light',
+ theme:'light',audit:[],
  students:[
-  {id:'s1',name:'Ananya Das',dob:'2014-08-16',address:'Lalpur, Ranchi',studentPhone:'',school:'St. Xavier’s School',schoolClass:'Class VI',photo:'',status:'Active',guardianLinks:[{guardianId:'g1',relationship:'Father',primary:true},{guardianId:'g2',relationship:'Mother',primary:false}],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'12 Jan 2024',scope:'mine'},{subject:'Vocals',teacher:'Mrs. Meera',status:'Active',since:'03 Jun 2025',scope:'other'}],attendance:{present:34,absent:3,leave:2,unmarked:1,recent:[{date:'25 Nov 2026',subject:'Piano',status:'Present'},{date:'22 Nov 2026',subject:'Vocals',status:'Present'},{date:'18 Nov 2026',subject:'Piano',status:'Absent'}]}},
-  {id:'s2',name:'Arjun Das',dob:'2011-02-04',address:'Lalpur, Ranchi',studentPhone:'',school:'St. Xavier’s School',schoolClass:'Class IX',photo:'',status:'Active',guardianLinks:[{guardianId:'g1',relationship:'Father',primary:true}],enrolments:[{subject:'Guitar',teacher:'Stephen',status:'Active',since:'10 Mar 2025',scope:'mine'}],attendance:{present:28,absent:1,leave:1,unmarked:0,recent:[]}}
+  {id:'STU-0001',name:'Aarav Sharma',dob:'2013-11-02',address:'Lalpur, Ranchi',studentPhone:'',school:'St. Xavier’s School',schoolClass:'Class VII',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'12 Jan 2024',scope:'mine'}],attendance:{present:36,absent:2,leave:1,unmarked:0,recent:[{date:'25 Nov 2026',subject:'Piano',status:'Present'},{date:'22 Nov 2026',subject:'Piano',status:'Present'},{date:'18 Nov 2026',subject:'Piano',status:'Present'}]}},
+  {id:'STU-0002',name:'Ananya Das',dob:'2014-08-16',address:'Lalpur, Ranchi',studentPhone:'',school:'St. Xavier’s School',schoolClass:'Class VI',photo:'',status:'Active',guardianLinks:[{guardianId:'g1',relationship:'Father',primary:true},{guardianId:'g2',relationship:'Mother',primary:false}],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'12 Jan 2024',scope:'mine'},{subject:'Vocals',teacher:'Mrs. Meera',status:'Active',since:'03 Jun 2025',scope:'other'}],attendance:{present:34,absent:3,leave:2,unmarked:1,recent:[{date:'25 Nov 2026',subject:'Piano',status:'Present'},{date:'22 Nov 2026',subject:'Vocals',status:'Present'},{date:'18 Nov 2026',subject:'Piano',status:'Absent'}]}},
+  {id:'STU-0003',name:'Misha Singh',dob:'2015-07-22',address:'Doranda, Ranchi',studentPhone:'',school:'St. Thomas School',schoolClass:'Class V',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'08 Apr 2025',scope:'mine'}],attendance:{present:28,absent:1,leave:2,unmarked:0,recent:[{date:'24 Nov 2026',subject:'Piano',status:'Present'},{date:'20 Nov 2026',subject:'Piano',status:'Present'}]}},
+  {id:'STU-0004',name:'Rohan Kumar',dob:'2012-12-09',address:'Harmu, Ranchi',studentPhone:'',school:'Delhi Public School',schoolClass:'Class VII',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'05 Feb 2024',scope:'mine'},{subject:'Guitar',teacher:'Mr. David',status:'Active',since:'14 Aug 2025',scope:'other'}],attendance:{present:31,absent:2,leave:0,unmarked:1,recent:[{date:'26 Nov 2026',subject:'Piano',status:'Present'},{date:'21 Nov 2026',subject:'Guitar',status:'Present'}]}},
+  {id:'STU-0005',name:'Ishita Roy',dob:'2014-04-11',address:'Kanke Road, Ranchi',studentPhone:'',school:'Loreto Convent',schoolClass:'Class VI',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Vocals',teacher:'Stephen',status:'Active',since:'11 Jul 2024',scope:'mine'}],attendance:{present:27,absent:2,leave:1,unmarked:0,recent:[{date:'25 Nov 2026',subject:'Vocals',status:'Present'},{date:'19 Nov 2026',subject:'Vocals',status:'Present'}]}},
+  {id:'STU-0006',name:'Kabir Ali',dob:'2013-06-14',address:'Upper Bazar, Ranchi',studentPhone:'',school:'St. Xavier’s School',schoolClass:'Class VII',photo:'',status:'Inactive',guardianLinks:[],enrolments:[{subject:'Guitar',teacher:'Stephen',status:'Inactive',since:'02 Sep 2024',scope:'mine'}],attendance:{present:18,absent:4,leave:1,unmarked:0,recent:[{date:'12 Oct 2026',subject:'Guitar',status:'Present'}]}},
+  {id:'STU-0007',name:'Tara Dutta',dob:'2015-01-20',address:'Lalpur, Ranchi',studentPhone:'',school:'St. Anthony’s School',schoolClass:'Class V',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Piano',teacher:'Stephen',status:'Active',since:'18 Mar 2025',scope:'mine'},{subject:'Vocals',teacher:'Mrs. Meera',status:'Active',since:'12 Jun 2025',scope:'other'}],attendance:{present:25,absent:1,leave:2,unmarked:0,recent:[{date:'23 Nov 2026',subject:'Piano',status:'Present'}]}},
+  {id:'STU-0008',name:'Vivaan Roy',dob:'2012-09-03',address:'Morabadi, Ranchi',studentPhone:'',school:'Delhi Public School',schoolClass:'Class VIII',photo:'',status:'Active',guardianLinks:[],enrolments:[{subject:'Guitar',teacher:'Stephen',status:'Active',since:'09 Jan 2025',scope:'mine'}],attendance:{present:30,absent:1,leave:1,unmarked:0,recent:[{date:'24 Nov 2026',subject:'Guitar',status:'Present'}]}}
  ],
  guardians:[
-  {id:'g1',name:'Sanjay Das',relationship:'Father',phone:'+91 98765 43210',whatsapp:'+91 98765 43210',email:'sanjay.das@example.com',primary:true},
-  {id:'g2',name:'Madhuri Das',relationship:'Mother',phone:'+91 98765 43211',whatsapp:'',email:'',primary:false}
+  {id:'g1',name:'Sanjay Das',phone:'+91 98765 43210',whatsapp:'+91 98765 43210',email:'sanjay.das@example.com'},
+  {id:'g2',name:'Madhuri Das',phone:'+91 98765 43211',whatsapp:'',email:''}
  ]
 };
-let state=loadState(),studentId='s1',toastTimer=null,themePref=state.theme||'light';
+const DIRECTORY_KEY='celestial-directory-v1-demo';
+const params=new URLSearchParams(window.location.search);
+let studentId=params.get('studentId')||'STU-0001',toastTimer=null,themePref='light';
 function clone(v){return JSON.parse(JSON.stringify(v))}
-function loadState(){try{const x=JSON.parse(localStorage.getItem(PROFILE_KEY)||'null');if(x&&x.students&&x.guardians)return x}catch(e){}return clone(seed)}
+function loadState(){
+ const base=clone(seed);
+ try{
+  const saved=JSON.parse(localStorage.getItem(PROFILE_KEY)||'null');
+  if(saved&&Array.isArray(saved.students)){
+   base.theme=saved.theme||base.theme;
+   base.audit=Array.isArray(saved.audit)?saved.audit:[];
+   if(Array.isArray(saved.guardians)&&saved.guardians.length)base.guardians=saved.guardians;
+   saved.students.forEach(record=>{
+    const legacyId=record.id==='s1'?'STU-0002':record.id;
+    const target=base.students.find(item=>item.id===legacyId);
+    if(target)Object.assign(target,record,{id:target.id});
+   });
+  }
+ }catch(e){}
+ themePref=base.theme||'light';
+ return base;
+}
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function student(){return state.students.find(s=>s.id===studentId)||state.students[0]}
+function student(){
+ let found=state.students.find(s=>s.id===studentId);
+ if(found)return found;
+ try{
+  const directory=JSON.parse(localStorage.getItem(DIRECTORY_KEY)||'null');
+  const record=directory&&Array.isArray(directory.students)?directory.students.find(s=>s.id===studentId):null;
+  if(record){
+   found={id:record.id,name:record.name,dob:'',address:'',studentPhone:'',school:'',schoolClass:'',photo:'',status:record.status||'Active',guardianLinks:[],enrolments:(record.enrolments||[]).map(e=>({subject:e.subject,teacher:'Current teacher',status:e.status||record.status||'Active',since:'Not recorded',scope:'mine'})),attendance:{present:0,absent:0,leave:0,unmarked:0,recent:[]}};
+   state.students.push(found);persist();return found;
+  }
+ }catch(e){}
+ return null;
+}
 function guardian(id){return state.guardians.find(g=>g.id===id)}
 function studentGuardians(s){return (s.guardianLinks||[]).map(link=>{const g=guardian(link.guardianId);return g?{...g,relationship:link.relationship,primary:link.primary}:null}).filter(Boolean)}
 function age(dob){if(!dob)return '—';const d=new Date(dob+'T12:00:00'),n=new Date();let a=n.getFullYear()-d.getFullYear();if(n.getMonth()<d.getMonth()||(n.getMonth()===d.getMonth()&&n.getDate()<d.getDate()))a--;return a+' years'}
@@ -273,7 +310,7 @@ function showModal(title,body,actions){document.getElementById('modal').innerHTM
 function field(label,value){return '<div class="profile-field"><label>'+label+'</label><div>'+(value?esc(value):'<span class="profile-muted">Not provided</span>')+'</div></div>'}
 function contactLinks(g){let out='';if(g.phone)out+='<a class="contact-link" href="tel:'+encodeURIComponent(g.phone)+'">☎ Call</a>';const wa=g.whatsapp||g.phone;if(wa)out+='<a class="contact-link" href="https://wa.me/'+wa.replace(/[^0-9]/g,'')+'" target="_blank" rel="noopener">◉ WhatsApp</a>';if(g.phone)out+='<a class="contact-link" href="sms:'+encodeURIComponent(g.phone)+'">✉ SMS</a>';if(g.email)out+='<a class="contact-link" href="mailto:'+encodeURIComponent(g.email)+'">✉ Email</a>';return out}
 function initials(name){return String(name||'').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase()}
-function render(){const s=student();if(!s)return;applyTheme();document.getElementById('topTitle').textContent='Student Profile';const photo=s.photo?'<img src="'+esc(s.photo)+'" alt="">':esc(initials(s.name));const mine=s.enrolments.filter(e=>e.scope==='mine'),other=s.enrolments.filter(e=>e.scope!=='mine');const guardians=studentGuardians(s);const attendance=s.attendance||{present:0,absent:0,leave:0,unmarked:0,recent:[]};
+function render(){const s=student();applyTheme();document.getElementById('topTitle').textContent='Student Profile';if(!s){document.getElementById('screen').innerHTML='<div class="profile-page"><p class="profile-note">This student profile could not be found.</p><button class="profile-edit" onclick="openReference(\\'prototype/teacher-student-directory-v1.html\\')">← Back to My Students</button></div>';document.getElementById('fab').style.display='none';return}const photo=s.photo?'<img src="'+esc(s.photo)+'" alt="">':esc(initials(s.name));const mine=s.enrolments.filter(e=>e.scope==='mine'),other=s.enrolments.filter(e=>e.scope!=='mine');const guardians=studentGuardians(s);const attendance=s.attendance||{present:0,absent:0,leave:0,unmarked:0,recent:[]};
 document.getElementById('screen').innerHTML='<div class="profile-page"><button class="profile-back" onclick="openReference(\'prototype/teacher-student-directory-v1.html\')">← &nbsp; Back to My Students</button>'+
 '<section class="profile-hero"><div class="profile-photo">'+photo+'</div><div class="profile-hero-main"><div class="profile-name">'+esc(s.name)+'</div><div class="profile-meta">'+esc(s.schoolClass||'Class not provided')+' · '+esc(age(s.dob))+' · '+esc(s.status)+'</div><div class="profile-tags"><span class="profile-tag">'+esc(s.id.toUpperCase())+'</span></div></div><div class="profile-hero-actions"><button class="profile-edit" onclick="editStudent()">Edit</button></div></section>'+
 '<section class="profile-section"><div class="profile-section-head"><h2>Personal details</h2><button class="profile-edit" onclick="editStudent()">Edit</button></div><div class="profile-section-body"><div class="profile-grid">'+field('Date of birth',s.dob?new Date(s.dob+'T12:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}):'')+field('Age',age(s.dob))+field('Home address',s.address)+field('Student phone',s.studentPhone)+field('School',s.school)+field('Class / grade',s.schoolClass)+'</div><p class="profile-note">Age is calculated from date of birth. Student details shown here are illustrative.</p></div></section>'+
