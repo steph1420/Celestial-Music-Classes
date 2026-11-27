@@ -2,7 +2,7 @@
 
 **Last updated:** 27 November 2026  
 **Current phase:** UX design + interactive prototype approval  
-**Next item:** Teacher Student Directory
+**Next item:** Teacher Student Profile — teacher view (T06)
 
 Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress · ⬜ not started · ⏸ blocked by policy/decision
 
@@ -29,8 +29,8 @@ Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress ·
 | T03 | Lesson capture / Class Register | 🔒 | Class Register v1.3 approved and locked |
 | T03a | Lesson Notes pop-up | 🔒 | Existing pop-up design approved; preserve it exactly unless user asks to change it |
 | T04 | Save result / session detail | 🔄 | Determine which confirmation/status details are integrated into register/history versus needing a separate view |
-| T05 | Student Directory | 🟡 NEXT | Discuss and build interactive prototype; do not settle with static mock-up |
-| T06 | Student Profile — teacher view | ⬜ | Teacher-permitted details, own enrolments and allowed history; no fee/invoice/payment amounts |
+| T05 | Student Directory | 🔒 | v1 approved and locked; see `docs/locked-student-directory.md` and `prototype/teacher-student-directory-v1.html` |
+| T06 | Student Profile — teacher view | 🟡 NEXT | Discuss and prototype; teacher-permitted details, own enrolments and allowed history; no fee/invoice/payment amounts |
 | T07 | History — by date | 🔒 | Combined History screen v1.2; default view |
 | T08 | History — by student | 🔒 | Combined History screen v1.2; select a student, then show that student's dates; Present default, All records switch |
 | T09 | Lesson detail / edit | 🔄 | Detail pop-up pattern established; editing permissions/history behaviour to be confirmed in context |
@@ -78,7 +78,7 @@ Notes:
 | UX screen inventory | `docs/UX_BASELINE.md` | ✅ Committed |
 | Decision log | `docs/DECISION_LOG.md` | ✅ Committed |
 | Open policy decisions | `docs/OPEN_DECISIONS.md` | ✅ Committed |
-| This tracker | `docs/BUILD_TRACKER.md` | ✅ Committed |
+| Student Directory specification | `docs/locked-student-directory.md` | 🔒 Approved and committed |\n| This tracker | `docs/BUILD_TRACKER.md` | ✅ Committed |
 | Next-chat handoff | `docs/HANDOFF_NEXT_CHAT.md` | ✅ Committed |
 
 ## 5. Release gates (do not mark complete until actually resolved)
