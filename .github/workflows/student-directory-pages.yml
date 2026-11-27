@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'prototype/teacher-student-directory-v1.html'
+      - 'prototype/teacher-student-directory-v1.1.html'
       - 'prototype/teacher-student-profile-v1.html'
       - 'prototype/class-register.html'
       - 'prototype/history-v1.2.html'
@@ -40,6 +41,7 @@ jobs:
           from pathlib import Path
           for name in [
               'prototype/teacher-student-directory-v1.html',
+              'prototype/teacher-student-directory-v1.1.html',
               'prototype/teacher-student-profile-v1.html',
               'prototype/class-register.html',
               'prototype/history-v1.2.html',
@@ -50,12 +52,20 @@ jobs:
               import subprocess
               subprocess.run(['node', '--check', '/tmp/prototype-check.js'], check=True)
               print('JavaScript syntax OK:', name)
+          directory = Path('prototype/teacher-student-directory-v1.1.html').read_text()
+          profile = Path('prototype/teacher-student-profile-v1.html').read_text()
+          required_directory = ['function openFullProfile', 'Student ID', 'Open full student profile', 'STU-0001']
+          required_profile = ["params.get('studentId')", 'directory.students.find', "id:'STU-0001'", "id:'STU-0008'"]
+          assert all(token in directory for token in required_directory), 'T05 profile link / Student ID contract is incomplete'
+          assert all(token in profile for token in required_profile), 'T06 shared Student ID / directory fallback contract is incomplete'
+          print('Student ID navigation contract OK')
           PY
 
       - name: Prepare preview site
         run: |
           mkdir -p _site/prototype
-          cp prototype/teacher-student-directory-v1.html _site/index.html
+          cp prototype/teacher-student-directory-v1.1.html _site/index.html
+          cp prototype/teacher-student-directory-v1.1.html _site/student-directory.html
           cp prototype/teacher-student-profile-v1.html _site/student-profile.html
           cp prototype/class-register.html _site/prototype/class-register.html
           cp prototype/history-v1.2.html _site/prototype/history-v1.2.html
