@@ -1,36 +1,52 @@
 # Celestial — Music School Management
 
-Celestial is a music-school management application. This repository preserves the approved Class Register screen as the first locked UX baseline.
+**Guiding principle: Simple by default. Powerful underneath.**
 
-## Current status
+Celestial is a mobile-first music-school management application for teachers and administrators. It is being designed screen by screen, with interactive prototypes reviewed and approved before production implementation.
 
-- Screen 1 — Class Register: **approved and locked**
-- Screen 2 — Lesson Notes: next screen to design
-- The current prototype is browser-only, uses sample data and local storage, and is not the production application.
-- Production architecture, authentication, backend sync and deployment remain separate implementation stages.
+## Project status
 
-## Approved Class Register behaviour
+- Product scope: baseline frozen.
+- Data architecture: 19-tab relational model approved with operational conditions.
+- Technical blueprint v1.1: approved with conditions.
+- UX: in screen-by-screen review and prototype validation.
+- **Teacher Screen 1 — Class Register: approved and locked (prototype v1.3).**
+- **Lesson Notes pop-up: existing design approved and locked.**
+- **Teacher History — By date and By student: approved and locked (prototype v1.2).**
+- **Next UX screen: Student Directory.**
+- Production implementation, backend sync, authentication and deployment: not yet authorised/completed.
 
-- Mobile-first, natural application UI; avoid an AI-dashboard aesthetic.
-- Light, Dark and System theme preferences.
-- Compact header; no “Teacher Workspace” label.
-- No teacher name or teacher selector on the teacher's own register. The logged-in teacher identity is implicit.
-- Subject and Class date selectors.
-- Student count is labelled “N students”, not “N enrolled”.
-- Each student row has immediate **P** (Present) and **A** (Absent) actions. Neither opens a popup.
-- Tapping the student row opens the lesson notes panel.
-- Leave and Unmarked are handled inside the lesson notes panel.
-- Long-press selects multiple students; bulk attendance and common lesson-note actions are supported.
-- Automatic local saving; register undo/redo is separate from general application history.
-- Common lesson details fill empty fields by default and preserve existing individual notes.
-- Each student's lesson record remains individual.
+## Start here
 
-## Design principle
+1. [Project plan](docs/PROJECT_PLAN.md) — product scope, architecture, workflows, implementation stages and release strategy.
+2. [Build tracker](docs/BUILD_TRACKER.md) — current status of every planned teacher and administrator screen.
+3. [Next-chat handoff](docs/HANDOFF_NEXT_CHAT.md) — exact continuation point and instructions for resuming work.
+4. [Decision log](docs/DECISION_LOG.md) — locked decisions and constraints.
+5. [Open decisions](docs/OPEN_DECISIONS.md) — policies that must be resolved before affected production features.
+6. [Architecture baseline](docs/ARCHITECTURE_BASELINE.md) — 19-tab data model and technical invariants.
+7. [UX baseline](docs/UX_BASELINE.md) — teacher/admin screen inventory and workflow rules.
 
-**Simple by default. Powerful underneath.**
+## Approved interactive prototypes
 
-Keep everyday teacher workflows fast and familiar. Preserve the richer data model and auditability beneath the interface without exposing unnecessary complexity.
+- [Class Register v1.3](prototype/class-register.html)
+- [History v1.2](prototype/history-v1.2.html)
+
+The Lesson Notes pop-up is part of the approved Class Register experience. Keep its existing appearance and interaction; do not redesign it.
+
+## Non-negotiable product principles
+
+- One shared application and data model with role-aware teacher and administrator workspaces.
+- One permanent Student record; a student can have multiple subject/teacher enrolments.
+- One class occurrence is a Session; each student's participation, attendance and lesson record remain individual.
+- Current records should be easy to use; important changes remain traceable.
+- No silent destructive edits to historical financial or teaching records. Archive/deactivate rather than hard-delete referenced records.
+- Backend permission checks are authoritative; hiding a UI control is not security.
+- Existing approved screens are locked. Extend the application without rebuilding or replacing them.
+- Keep the phone experience as the reference; tablet and desktop adapt the same workflows.
+- Avoid an AI-dashboard aesthetic, excess decoration and unnecessary complexity.
 
 ## Prototype limitations
 
-The prototype uses illustrative sample records and browser-local storage. It is not connected to Google Sheets, Apps Script or a production database. Local storage is not a substitute for server persistence, multi-user concurrency, authentication or a durable audit log.
+The approved HTML prototypes are interactive UI demonstrations using illustrative data and browser-local persistence. They are not connected to the production database, do not establish multi-user sync or authentication, and must not be treated as production code.
+
+See the [handoff document](docs/HANDOFF_NEXT_CHAT.md) before continuing work.
