@@ -14,7 +14,7 @@ Four teacher-facing experiences are approved:
 2. **Lesson Notes pop-up** — current design explicitly approved; retain it, do not reinvent it.
 3. **History v1.2** — approved and locked, containing both By date and By student views.\n4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
 
-The next item is **Teacher Student Directory**. The user expects an interactive HTML prototype, not a static diagram/mock-up alone.
+The next item is **Teacher Student Profile (T06)**. Teacher Student Directory v1 is approved and locked.
 
 ## 2. Files in GitHub
 
