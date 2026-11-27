@@ -70,7 +70,8 @@ Notes:
 | Project overview | `README.md` | ✅ Committed |
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
-| History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |\n| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
+| History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
+| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
 | History specification | `docs/locked-history.md` | 🔒 Approved and committed |
 | Whole project plan | `docs/PROJECT_PLAN.md` | ✅ Committed |
@@ -78,7 +79,8 @@ Notes:
 | UX screen inventory | `docs/UX_BASELINE.md` | ✅ Committed |
 | Decision log | `docs/DECISION_LOG.md` | ✅ Committed |
 | Open policy decisions | `docs/OPEN_DECISIONS.md` | ✅ Committed |
-| Student Directory specification | `docs/locked-student-directory.md` | 🔒 Approved and committed |\n| This tracker | `docs/BUILD_TRACKER.md` | ✅ Committed |
+| Student Directory specification | `docs/locked-student-directory.md` | 🔒 Approved and committed |
+| This tracker | `docs/BUILD_TRACKER.md` | ✅ Committed |
 | Next-chat handoff | `docs/HANDOFF_NEXT_CHAT.md` | ✅ Committed |
 
 ## 5. Release gates (do not mark complete until actually resolved)
