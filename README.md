@@ -29,7 +29,7 @@ Celestial is a mobile-first music-school management application for teachers and
 ## Approved interactive prototypes
 
 - [Class Register v1.3](prototype/class-register.html)
-- [History v1.2](prototype/history-v1.2.html)
+- [History v1.2](prototype/history-v1.2.html)\n- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)\n- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
 
 The Lesson Notes pop-up is part of the approved Class Register experience. Keep its existing appearance and interaction; do not redesign it.
 
