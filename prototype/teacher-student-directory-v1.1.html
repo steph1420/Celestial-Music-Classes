@@ -395,7 +395,7 @@ function showStudent(id){
     '<div style="padding-top:13px"><span class="dir-filter-label">Subject enrolments</span><div class="dir-modal-subjects">' + subjects + '</div></div>';
   showModal('Student overview',content,
     '<button class="action" onclick="closeModal()">Close</button>' +
-    '<button class="action gold" onclick="openFullProfile(\\'' + esc(student.id) + '\\')">Open full student profile →</button>');
+    '<button class="action gold" onclick="openFullProfile(\'' + esc(student.id) + '\')">Open full student profile →</button>');
 }
 function openFullProfile(id){
   const selected=state.students.find(item=>item.id===id);
