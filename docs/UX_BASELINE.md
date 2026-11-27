@@ -60,4 +60,7 @@ This inventory is based on the Complete Application UX v1.0, then updated with t
 - Class Register v1.3: `prototype/class-register.html`
 - History v1.2: `prototype/history-v1.2.html`
 - Lesson Notes pop-up: integrated into the Class Register; do not redesign.
-\n## Locked Teacher Student Directory\n\nThe T05 Student Directory v1 prototype is approved and locked: `prototype/teacher-student-directory-v1.html`. Its detailed behaviour and prototype limitations are recorded in `docs/locked-student-directory.md`. The next teacher screen is T06 Student Profile — teacher view.\n
+
+## Locked Teacher Student Directory
+
+The T05 Student Directory v1 prototype is approved and locked: `prototype/teacher-student-directory-v1.html`. Its detailed behaviour and prototype limitations are recorded in `docs/locked-student-directory.md`. The next teacher screen is T06 Student Profile — teacher view.
