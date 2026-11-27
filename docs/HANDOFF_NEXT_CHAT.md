@@ -111,4 +111,4 @@ See `docs/OPEN_DECISIONS.md`. Especially authentication/deployment identity, cro
 
 ## 10. Handoff prompt
 
-Continue Celestial from this repository and these documents. History v1.2 and Class Register v1.3 are approved and locked. The next task is the Teacher Student Directory. Discuss it, then build an interactive prototype. Do not start production coding yet.
+Continue Celestial from this repository and these documents. History v1.2 and Class Register v1.3 are approved and locked. Review the published T05 Student Directory v1.1 refinement. Do not overwrite the locked v1 baseline. Verify the profile link opens the same Student_ID in T06. Do not start production coding yet.
