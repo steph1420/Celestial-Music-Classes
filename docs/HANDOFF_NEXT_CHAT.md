@@ -4,7 +4,7 @@
 **Current repository:** https://github.com/steph1420/Celestial-Music-Classes  
 **Branch:** `main`  
 **Project stage:** UX screen-by-screen prototyping and approval  
-**Current next screen:** Teacher Student Profile — teacher view (T06)
+**Current screen:** Teacher Student Profile — teacher view (T06), prototype v1 awaiting user review
 
 ## 1. Immediate status
 
@@ -15,7 +15,7 @@ Four teacher-facing experiences are approved:
 3. **History v1.2** — approved and locked, containing both By date and By student views.
 4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
 
-The next item is **Teacher Student Profile (T06)**. Teacher Student Directory v1 is approved and locked.
+Teacher Student Directory v1 is approved and locked. T06 decisions are recorded in `docs/DECISION_LOG.md`; prototype: `prototype/teacher-student-profile-v1.html`.
 
 ## 2. Files in GitHub
 
@@ -67,9 +67,9 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Next task — Teacher Student Profile (T06)
+## 6. Current task — Review Teacher Student Profile (T06)
 
-Design the teacher-permitted student profile reached from My Students. Avoid turning it into the administrator's full student master/finance profile.
+The user has supplied the T06 decisions. Review the interactive prototype `prototype/teacher-student-profile-v1.html` with the user. Do not lock it until the user explicitly approves.
 
 Recommended discussion areas:
 - Which student identity and contact details should a teacher see?
