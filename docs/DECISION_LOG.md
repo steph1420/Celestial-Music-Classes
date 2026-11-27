@@ -68,3 +68,18 @@ This file records approved decisions and constraints. New decisions should be ap
 - Preserve approved screens as locked assets.
 - Update GitHub, tracker and handoff at each approval milestone.
 - Next planned screen is Teacher Student Directory.
+
+\n## Teacher Student Directory — locked (prototype v1, 27 November 2026)
+\n- Screen title: My Students; teacher roster shown once per student, regardless of multiple subject enrolments.
+- Search by student name.
+- Subject filters: All subjects, Piano, Vocals and Guitar.
+- Student status filters: Active (default), All students and Inactive.
+- List rows show student name, subject-enrolment chips and record status.
+- Selecting a row opens Student overview with name, record status and subject enrolments.
+- Empty results offer Clear all filters.
+- Add-student modal captures name, one or more subjects and Active/Inactive status; duplicate names in the demo roster are rejected.
+- Light, Dark and System themes; established Celestial shell/modal/toast patterns retained.
+- Prototype uses illustrative data and browser-local persistence only. Add-student is not a grant of production teacher permission to create master records/enrolments. Backend permissions remain authoritative; no finance data is exposed to teachers.
+- Specification: `docs/locked-student-directory.md`. Prototype: `prototype/teacher-student-directory-v1.html`.
+- Preserve the approved screen. Any change requires a deliberate versioned revision.
+\n
