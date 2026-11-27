@@ -206,8 +206,8 @@ let toastTimer = null;
 
 function stableStudentId(value,index){
   const raw=String(value||'');
-  if(/^STU-\\d{4,}$/i.test(raw)) return raw.toUpperCase();
-  const digits=raw.match(/\\d+/);
+  if(/^STU-\d{4,}$/i.test(raw)) return raw.toUpperCase();
+  const digits=raw.match(/\d+/);
   const number=digits?Number(digits[0]):index+1;
   return 'STU-'+String(number).padStart(4,'0');
 }
