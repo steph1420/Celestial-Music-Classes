@@ -29,7 +29,7 @@ Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress ·
 | T03 | Lesson capture / Class Register | 🔒 | Class Register v1.3 approved and locked |
 | T03a | Lesson Notes pop-up | 🔒 | Existing pop-up design approved; preserve it exactly unless user asks to change it |
 | T04 | Save result / session detail | 🔄 | Determine which confirmation/status details are integrated into register/history versus needing a separate view |
-| T05 | Student Directory | 🔒 | v1 approved and locked; see `docs/locked-student-directory.md` and `prototype/teacher-student-directory-v1.html` |
+| T05 | Student Directory | 🔒 / 🟡 | v1 remains approved and locked; v1.1 profile-navigation refinement is under review. See `docs/student-directory-v1.1-review.md` |
 | T06 | Student Profile — teacher view | 🟡 IN PROGRESS | Decisions recorded in `docs/DECISION_LOG.md`; prototype `prototype/teacher-student-profile-v1.html` awaiting user review and approval |
 | T07 | History — by date | 🔒 | Combined History screen v1.2; default view |
 | T08 | History — by student | 🔒 | Combined History screen v1.2; select a student, then show that student's dates; Present default, All records switch |
@@ -71,7 +71,7 @@ Notes:
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
 | History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
-| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
+| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |\n| Teacher Student Directory refinement | `prototype/teacher-student-directory-v1.1.html` | 🟡 v1.1 review prototype |\n| T05 v1.1 review notes | `docs/student-directory-v1.1-review.md` | 🟡 Under review |
 | Teacher Student Profile prototype | `prototype/teacher-student-profile-v1.html` | 🟡 v1 prototype for review |
 | Teacher Student Profile review specification | `docs/student-profile-v1-review.md` | 🟡 User decisions documented; pending approval |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
