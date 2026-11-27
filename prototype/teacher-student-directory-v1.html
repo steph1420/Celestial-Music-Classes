@@ -182,6 +182,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;transition:backgr
 </div>
 <script>
 
+
 const DIRECTORY_KEY = 'celestial-directory-v1-demo';
 const REPO_ROOT = 'https://github.com/steph1420/Celestial-Music-Classes/blob/main/';
 const seedStudents = [
@@ -326,11 +327,11 @@ function renderDirectory(){
       '<section class="dir-controls" aria-label="Search and filter students">' +
         '<label class="dir-search"><span class="dir-search-icon" aria-hidden="true">⌕</span><input id="studentSearch" type="search" placeholder="Search by student name…" autocomplete="off" value="' + esc(query) + '" oninput="setQuery(this.value)" aria-label="Search students by name"></label>' +
         '<div class="dir-filter-block"><span class="dir-filter-label">Subject</span><div class="dir-chip-row">' +
-          ['All','Piano','Vocals','Guitar'].map(value=>'<button class="dir-chip" aria-pressed="' + (subjectFilter===value) + '" onclick="setSubjectFilter(\\'' + value + '\\')">' + (value==='All'?'All subjects':value) + '</button>').join('') +
+          ['All','Piano','Vocals','Guitar'].map(value=>'<button class="dir-chip" data-subject="' + esc(value) + '" aria-pressed="' + (subjectFilter===value) + '" onclick="setSubjectFilter(this.dataset.subject)">' + (value==='All'?'All subjects':value) + '</button>').join('') +
         '</div></div>' +
         '<div class="dir-filter-divider"></div>' +
         '<div class="dir-filter-block"><span class="dir-filter-label">Student status</span><div class="dir-chip-row">' +
-          ['Active','All','Inactive'].map(value=>'<button class="dir-chip" aria-pressed="' + (statusFilter===value) + '" onclick="setStatusFilter(\\'' + value + '\\')">' + (value==='All'?'All students':value) + '</button>').join('') +
+          ['Active','All','Inactive'].map(value=>'<button class="dir-chip" data-status="' + esc(value) + '" aria-pressed="' + (statusFilter===value) + '" onclick="setStatusFilter(this.dataset.status)">' + (value==='All'?'All students':value) + '</button>').join('') +
         '</div></div>' +
       '</section>' +
       '<p class="dir-roster-note"><span aria-hidden="true">ⓘ</span><span><strong>One student, one record.</strong> A student enrolled in multiple subjects still appears only once in this directory.</span></p>' +
@@ -350,7 +351,7 @@ function renderList(){
   }
   holder.innerHTML = '<div class="dir-list">' + list.map(student=>{
     const tags = student.enrolments.map(e=>'<span class="dir-subject-tag">' + esc(e.subject) + '</span>').join('');
-    return '<button class="dir-row" type="button" onclick="showStudent(\\'' + esc(student.id) + '\\')" aria-label="View ' + esc(student.name) + '">' +
+    return '<button class="dir-row" type="button" data-id="' + esc(student.id) + '" onclick="showStudent(this.dataset.id)" aria-label="View ' + esc(student.name) + '">' +
       '<span class="dir-avatar" aria-hidden="true">' + esc(initials(student.name)) + '</span>' +
       '<span class="dir-person"><span class="dir-person-name">' + esc(student.name) + '</span><span class="dir-subjects">' + tags + '</span></span>' +
       '<span class="dir-row-side"><span class="dir-status ' + (student.status==='Active'?'active':'inactive') + '">' + esc(student.status) + '</span><span class="dir-chevron" aria-hidden="true">›</span></span>' +
@@ -411,5 +412,6 @@ document.getElementById('fab').style.display = 'grid';
 applyTheme();
 renderDirectory();
 updateHistoryButtons();
+
 
 </script></body></html>
