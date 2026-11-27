@@ -11,7 +11,7 @@ This inventory is based on the Complete Application UX v1.0, then updated with t
 | T03 | Lesson record editor | Implemented as the approved Class Register + integrated Lesson Notes pop-up |
 | T04 | Save result / session detail | To reconcile; avoid duplicate confirmation screens if status can be shown in the current workflow |
 | T05 | Student directory | Approved and locked as Teacher Student Directory v1; see `docs/locked-student-directory.md` |
-| T06 | Student profile — teacher view | Next screen to prototype |
+| T06 | Student profile — teacher view | v1 prototype created for review; design decisions recorded in `docs/DECISION_LOG.md` |
 | T07 | History — by date | Combined into approved History screen, default mode |
 | T08 | History — by student | Combined into approved History screen, select a student then inspect that student's timeline |
 | T09 | Lesson detail/edit | Reuse existing detail/pop-up pattern; editing and change-history permissions require confirmation |
