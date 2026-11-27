@@ -67,12 +67,12 @@ Notes:
 
 | Artefact | Repository path | Status |
 |---|---|---|
-| Project overview | `README.md` | 🔄 Being updated with this handoff |
+| Project overview | `README.md` | ✅ Committed |
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
 | History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
-| Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 To be committed |
-| History specification | `docs/locked-history.md` | 🔒 To be committed |
+| Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
+| History specification | `docs/locked-history.md` | 🔒 Approved and committed |
 | Whole project plan | `docs/PROJECT_PLAN.md` | ✅ Committed |
 | Architecture baseline | `docs/ARCHITECTURE_BASELINE.md` | ✅ Committed |
 | UX screen inventory | `docs/UX_BASELINE.md` | ✅ Committed |
