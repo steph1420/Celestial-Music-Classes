@@ -4,7 +4,7 @@
 **Current repository:** https://github.com/steph1420/Celestial-Music-Classes  
 **Branch:** `main`  
 **Project stage:** UX screen-by-screen prototyping and approval  
-**Current screen:** Teacher Student Profile — teacher view (T06), prototype v1 awaiting user review
+**Current screen:** T05 Student Directory v1.1 navigation refinement, awaiting user review
 
 ## 1. Immediate status
 
@@ -15,7 +15,7 @@ Four teacher-facing experiences are approved:
 3. **History v1.2** — approved and locked, containing both By date and By student views.
 4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
 
-Teacher Student Directory v1 is approved and locked. T06 decisions are recorded in `docs/DECISION_LOG.md`; prototype: `prototype/teacher-student-profile-v1.html`.
+Teacher Student Directory v1 remains approved and locked. T05 v1.1 adds Student ID + Open full student profile and matches T05/T06 records; review notes: `docs/student-directory-v1.1-review.md`. T06 profile prototype: `prototype/teacher-student-profile-v1.html`.
 
 ## 2. Files in GitHub
 
@@ -67,9 +67,9 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Current task — Review Teacher Student Profile (T06)
+## 6. Current task — Review T05 v1.1 profile navigation
 
-The user has supplied the T06 decisions. Review the interactive prototype `prototype/teacher-student-profile-v1.html` with the user. Do not lock it until the user explicitly approves.
+The user approved adding Student ID and an Open full student profile action to the T05 overview modal. Review `prototype/teacher-student-directory-v1.1.html` and confirm the selected record opens the matching T06 profile. The locked T05 v1 baseline must remain unchanged.
 
 Recommended discussion areas:
 - Which student identity and contact details should a teacher see?
