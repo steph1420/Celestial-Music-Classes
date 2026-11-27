@@ -4,15 +4,15 @@
 **Current repository:** https://github.com/steph1420/Celestial-Music-Classes  
 **Branch:** `main`  
 **Project stage:** UX screen-by-screen prototyping and approval  
-**Current next screen:** Teacher Student Directory
+**Current next screen:** Teacher Student Profile — teacher view (T06)
 
 ## 1. Immediate status
 
-Three teacher-facing experiences are approved:
+Four teacher-facing experiences are approved:
 
 1. **Class Register v1.3** — approved and locked.
 2. **Lesson Notes pop-up** — current design explicitly approved; retain it, do not reinvent it.
-3. **History v1.2** — approved and locked, containing both By date and By student views.
+3. **History v1.2** — approved and locked, containing both By date and By student views.\n4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
 
 The next item is **Teacher Student Directory**. The user expects an interactive HTML prototype, not a static diagram/mock-up alone.
 
@@ -66,9 +66,9 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Next task — Teacher Student Directory
+## 6. Next task — Teacher Student Profile (T06)
 
-Start by discussing what the teacher needs to find and do from the directory. Avoid inventing an administrator directory inside the teacher workspace. The teacher view should be limited to students the teacher is permitted to see and only expose fields allowed by the unresolved visibility policy.
+Design the teacher-permitted student profile reached from My Students. Avoid turning it into the administrator's full student master/finance profile. The teacher view should be limited to students the teacher is permitted to see and only expose fields allowed by the unresolved visibility policy.
 
 Recommended discussion areas:
 - Search by student name or ID.
@@ -80,7 +80,7 @@ Recommended discussion areas:
 - Whether directory starts with all assigned students or a focused filter.
 Do not force these design suggestions without user discussion.
 
-Then build a working interactive prototype using the design language of the approved Register and History. Keep changes local to the new screen/prototype; do not rebuild the approved screens. Test search, filtering, student selection/navigation, theme and mobile layout before sharing. The user should be able to open/test the prototype directly.
+Build a working interactive prototype using the design language of the approved Register, History and Student Directory. Keep changes local to the new screen/prototype; do not rebuild any approved screens. Test the profile's visible information, navigation, theme and mobile layout before sharing.
 
 ## 7. Overall plan and architecture
 
