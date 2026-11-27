@@ -71,7 +71,9 @@ Notes:
 | Class Register prototype | `prototype/class-register.html` | 🔒 v1.3 approved |
 | Class Register specification | `docs/locked-class-register.md` | 🔒 |
 | History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
-| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |\n| Teacher Student Directory refinement | `prototype/teacher-student-directory-v1.1.html` | 🟡 v1.1 review prototype |\n| T05 v1.1 review notes | `docs/student-directory-v1.1-review.md` | 🟡 Under review |
+| Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
+| Teacher Student Directory refinement | `prototype/teacher-student-directory-v1.1.html` | 🟡 v1.1 review prototype |
+| T05 v1.1 review notes | `docs/student-directory-v1.1-review.md` | 🟡 Under review |
 | Teacher Student Profile prototype | `prototype/teacher-student-profile-v1.html` | 🟡 v1 prototype for review |
 | Teacher Student Profile review specification | `docs/student-profile-v1-review.md` | 🟡 User decisions documented; pending approval |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
