@@ -13,7 +13,8 @@ Celestial is a mobile-first music-school management application for teachers and
 - **Teacher Screen 1 — Class Register: approved and locked (prototype v1.3).**
 - **Lesson Notes pop-up: existing design approved and locked.**
 - **Teacher History — By date and By student: approved and locked (prototype v1.2).**
-- **Teacher Student Directory: approved and locked (prototype v1).**\n- **Next UX screen: Teacher Student Profile (T06).**
+- **Teacher Student Directory: approved and locked (prototype v1).**
+- **Next UX screen: Teacher Student Profile (T06).**
 - Production implementation, backend sync, authentication and deployment: not yet authorised/completed.
 
 ## Start here
@@ -29,7 +30,11 @@ Celestial is a mobile-first music-school management application for teachers and
 ## Approved interactive prototypes
 
 - [Class Register v1.3](prototype/class-register.html)
-- [History v1.2](prototype/history-v1.2.html)\n- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)\n- [Teacher Student Directory locked specification](docs/locked-student-directory.md)\n- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)\n- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
+- [History v1.2](prototype/history-v1.2.html)
+- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
+- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
+- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
+- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
 
 The Lesson Notes pop-up is part of the approved Class Register experience. Keep its existing appearance and interaction; do not redesign it.
 
