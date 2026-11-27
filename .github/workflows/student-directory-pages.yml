@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - 'prototype/teacher-student-directory-v1.html'
+      - 'prototype/teacher-student-profile-v1.html'
+      - 'prototype/class-register.html'
+      - 'prototype/history-v1.2.html'
       - '.github/workflows/student-directory-pages.yml'
   workflow_dispatch:
 
@@ -33,8 +36,11 @@ jobs:
 
       - name: Prepare preview site
         run: |
-          mkdir -p _site
+          mkdir -p _site/prototype
           cp prototype/teacher-student-directory-v1.html _site/index.html
+          cp prototype/teacher-student-profile-v1.html _site/student-profile.html
+          cp prototype/class-register.html _site/prototype/class-register.html
+          cp prototype/history-v1.2.html _site/prototype/history-v1.2.html
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
