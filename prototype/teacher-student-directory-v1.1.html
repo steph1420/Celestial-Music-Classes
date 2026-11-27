@@ -225,7 +225,11 @@ function loadDirectory(){
   try{
     const saved = JSON.parse(localStorage.getItem(DIRECTORY_KEY) || 'null');
     if(saved && Array.isArray(saved.students)){
-      return {students:normaliseStudentIds(saved.students),theme:saved.theme || 'light'};
+      const students=normaliseStudentIds(saved.students);
+      if(students.some((student,index)=>student.id!==saved.students[index].id)){
+        localStorage.setItem(DIRECTORY_KEY,JSON.stringify({students:students,theme:saved.theme || 'light'}));
+      }
+      return {students:students,theme:saved.theme || 'light'};
     }
   }catch(e){}
   return {students:normaliseStudentIds(structuredClone(seedStudents)),theme:'light'};
