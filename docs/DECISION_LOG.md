@@ -67,7 +67,7 @@ This file records approved decisions and constraints. New decisions should be ap
 - Do not stop at static mock-ups when a prototype is expected.
 - Preserve approved screens as locked assets.
 - Update GitHub, tracker and handoff at each approval milestone.
-- Next planned screen is Teacher Student Directory.
+- T05 Student Directory v1.1 navigation refinement is under review; T06 Student Profile remains the next teacher screen.
 
 
 ## Teacher Student Directory — locked (prototype v1, 27 November 2026)
