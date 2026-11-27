@@ -12,7 +12,8 @@ Four teacher-facing experiences are approved:
 
 1. **Class Register v1.3** — approved and locked.
 2. **Lesson Notes pop-up** — current design explicitly approved; retain it, do not reinvent it.
-3. **History v1.2** — approved and locked, containing both By date and By student views.\n4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
+3. **History v1.2** — approved and locked, containing both By date and By student views.
+4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
 
 The next item is **Teacher Student Profile (T06)**. Teacher Student Directory v1 is approved and locked.
 
