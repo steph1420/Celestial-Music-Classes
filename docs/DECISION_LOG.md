@@ -104,3 +104,12 @@ This file records approved decisions and constraints. New decisions should be ap
 - Attendance: summary counts and recent attendance, with a link to the existing History screen. Unmarked remains distinct from Present.
 - No fees, invoices or payments in the teacher profile.
 - Prototype: `prototype/teacher-student-profile-v1.html`; it uses illustrative data and browser-local persistence, not production storage, authentication or multi-user sync.
+
+\n## Teacher Student Directory v1.1 — requested refinement (27 November 2026)
+- Preserve the locked v1 prototype unchanged.
+- The v1.1 overview modal displays the selected student's stable Student_ID and offers an explicit Open full student profile action.
+- T05 passes the selected Student_ID to T06; T06 must resolve exactly that record and must never silently fall back to another student's profile.
+- T05/T06 prototype records use matching demo IDs in the form STU-0001, etc. Legacy T05 browser-local dN IDs are migrated to stable demo IDs; newly added demo students receive the next ID.
+- If a newly added directory student has no pre-seeded profile, T06 creates a blank demo profile from the same directory record and its enrolments.
+- T05 v1.1 is a refinement for user review; it is not locked until user approval. See `docs/student-directory-v1.1-review.md`.
+\n
