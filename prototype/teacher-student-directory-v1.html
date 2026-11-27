@@ -282,7 +282,13 @@ function toggleMenu(force){
 }
 function openReference(relativePath){
   toggleMenu(false);
-  window.open(REPO_ROOT + relativePath,'_blank','noopener');
+  const root = 'https://steph1420.github.io/Celestial-Music-Classes/';
+  const target = relativePath.includes('class-register.html')
+    ? root + 'prototype/class-register.html'
+    : relativePath.includes('history-v1.2.html')
+      ? root + 'prototype/history-v1.2.html'
+      : root;
+  window.location.href = target;
 }
 function showPreferences(){
   toggleMenu(false);
