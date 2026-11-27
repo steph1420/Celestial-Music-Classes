@@ -68,17 +68,17 @@ The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and
 
 ## 6. Next task — Teacher Student Profile (T06)
 
-Design the teacher-permitted student profile reached from My Students. Avoid turning it into the administrator's full student master/finance profile. The teacher view should be limited to students the teacher is permitted to see and only expose fields allowed by the unresolved visibility policy.
+Design the teacher-permitted student profile reached from My Students. Avoid turning it into the administrator's full student master/finance profile.
 
 Recommended discussion areas:
-- Search by student name or ID.
-- Active/inactive/archived visibility, if applicable to teacher permissions.
-- Relevant subject/enrolment chips where a student has multiple subjects.
-- Student name and useful non-sensitive context.
-- Clear path to the teacher's permitted Student Profile.
-- Empty/loading/error states.
-- Whether directory starts with all assigned students or a focused filter.
-Do not force these design suggestions without user discussion.
+- Which student identity and contact details should a teacher see?
+- How should multiple subject enrolments and teacher relationships be presented?
+- Which lesson/attendance information belongs on the profile versus the separate History screen?
+- What guardian information, if any, is visible to teachers?
+- Which actions are available: view only, edit permitted details, or navigate to enrolment-specific actions?
+- Fees, invoices and payments remain outside the teacher profile.
+- Cross-teacher lesson-note visibility remains unresolved under AUTH-02; do not expose other teachers' private notes by default.
+- Include loading, empty, error and permission-denied states.
 
 Build a working interactive prototype using the design language of the approved Register, History and Student Directory. Keep changes local to the new screen/prototype; do not rebuild any approved screens. Test the profile's visible information, navigation, theme and mobile layout before sharing.
 
