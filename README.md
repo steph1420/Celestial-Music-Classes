@@ -13,7 +13,7 @@ Celestial is a mobile-first music-school management application for teachers and
 - **Teacher Screen 1 — Class Register: approved and locked (prototype v1.3).**
 - **Lesson Notes pop-up: existing design approved and locked.**
 - **Teacher History — By date and By student: approved and locked (prototype v1.2).**
-- **Teacher Student Directory: approved and locked (prototype v1).**
+- **Teacher Student Directory v1: approved and locked.**\n- **Teacher Student Directory v1.1: Student ID + full-profile navigation refinement under review.**
 - **Teacher Student Profile (T06): v1 prototype under review; not yet locked.**
 - Production implementation, backend sync, authentication and deployment: not yet authorised/completed.
 
@@ -31,7 +31,7 @@ Celestial is a mobile-first music-school management application for teachers and
 
 - [Class Register v1.3](prototype/class-register.html)
 - [History v1.2](prototype/history-v1.2.html)
-- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
+- [Teacher Student Directory v1 — locked baseline](prototype/teacher-student-directory-v1.html)\n- [Teacher Student Directory v1.1 — review prototype](prototype/teacher-student-directory-v1.1.html)\n- [T05 v1.1 review notes](docs/student-directory-v1.1-review.md)
 - [Teacher Student Profile v1 — review prototype](prototype/teacher-student-profile-v1.html)
 - [Teacher Student Directory locked specification](docs/locked-student-directory.md)
 - [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
