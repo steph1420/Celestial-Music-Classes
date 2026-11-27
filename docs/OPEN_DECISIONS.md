@@ -21,7 +21,7 @@ These items were explicitly unresolved in Technical Blueprint v1.1 / Application
 | GROUP-01 | Group classes in V1 | Are group session creation and management enabled in initial release or only structurally supported? | Before session UX freeze |
 | DATA-01 | Guardian requirement | Must minors have a guardian contact at admission? | Before student form validation |
 
-## Safe defaults already in the architecture baseline
+## Resolved decision\n\n- **AUTH-02 — Teacher note visibility:** Teachers may see another teacher's lesson notes/remarks only when the record is explicitly marked as shared. Private/unshared notes remain hidden. This policy is recorded in `docs/DECISION_LOG.md`.\n\n## Safe defaults already in the architecture baseline
 
 These are not open to silent reinterpretation:
 - Unmarked attendance is not Present.
