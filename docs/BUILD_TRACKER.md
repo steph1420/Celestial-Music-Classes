@@ -15,7 +15,7 @@ Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress ·
 | 2 | Continuity architecture | ✅ | Effective dating, successor enrolments, traceability |
 | 3 | Technical blueprint v1.1 | ✅ | Approved with conditions; open gates remain |
 | 4 | Complete application UX | 🟡 | Screen-by-screen refinement; earlier UX v1.0 is a baseline, not final screen approval |
-| 4.5 | Interactive prototypes and user approval | 🟡 | Register, Notes and History approved |
+| 4.5 | Interactive prototypes and user approval | 🟡 | Register, Notes, History and Student Directory approved |
 | 5 | Application foundation/design system | ⬜ | Wait for UX sign-off |
 | 6 | Feature implementation | ⬜ | Production code not yet authorised |
 | 7 | Testing, sync and deployment | ⬜ | Backend/auth/PWA decisions and implementation pending |
@@ -104,9 +104,9 @@ Notes:
 
 ## 6. Next actions
 
-1. Design Teacher Student Directory with the user.
-2. Build an interactive prototype using the approved design language.
+1. Design Teacher Student Profile (T06) with the user.
+2. Build an interactive prototype using the approved design language, preserving every locked screen.
 3. Test it; revise until the user explicitly approves.
-4. Lock its specification and prototype in GitHub; update this tracker.
-5. Continue teacher screens, then the administrator workspace.
+4. Lock its specification and prototype in GitHub; update this tracker and handoff.
+5. Continue the remaining teacher screens, then the administrator workspace.
 6. Complete UX sign-off before beginning production implementation.
