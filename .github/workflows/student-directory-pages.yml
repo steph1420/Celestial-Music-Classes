@@ -62,7 +62,6 @@ jobs:
           assert all(token in directory for token in required_directory), 'T05 direct profile navigation is incomplete'
           assert 'function showStudent(id)' not in directory, 'T05 quick overview function must be removed'
           assert 'Student overview' not in directory, 'T05 quick overview must be removed'
-          assert 'function showStudent(id)' not in directory, 'T05 overview modal function must be removed'
           required_profile = ["params.get('studentId')", 'directory.students.find', 'function renderEdit()', 'function saveProfile(event)', 'parentInfoEnabled', 'additionalNotes', 'Enter a phone number for every parent / guardian.', 'Additional Notes', 'Shared with assigned teachers']
           assert all(token in profile for token in required_profile), 'T06 profile requirements are incomplete'
           assert profile.count('onclick="editStudent()"') == 1, 'T06 must have one Edit profile action'
