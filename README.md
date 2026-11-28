@@ -13,10 +13,10 @@ Celestial is a mobile-first music-school management application for teachers and
 - **Teacher Screen 1 — Class Register: approved and locked (prototype v1.3).**
 - **Lesson Notes pop-up: existing design approved and locked.**
 - **Teacher History — By date and By student: approved and locked (prototype v1.2).**
-- **Teacher Student Directory v1: approved and locked.**
+- **Teacher Student Directory v1.2: approved and locked.**
 - **Teacher Student Directory v1.1: superseded review refinement.**
-- **Teacher Student Directory v1.2: direct row-to-profile navigation; under review.**
-- **Teacher Student Profile (T06): v2 prototype under review; not yet locked.**
+- **Teacher Student Profile v2: approved and locked.**
+- **Next teacher screen: T09 — Lesson Detail / Edit.**
 - Production implementation, backend sync, authentication and deployment: not yet authorised/completed.
 
 ## Start here
@@ -35,15 +35,15 @@ Celestial is a mobile-first music-school management application for teachers and
 - [History v1.2](prototype/history-v1.2.html)
 - [Teacher Student Directory v1 — locked baseline](prototype/teacher-student-directory-v1.html)
 - [Teacher Student Directory v1.1 — superseded review prototype](prototype/teacher-student-directory-v1.1.html)
-- [Teacher Student Directory v1.2 — direct profile navigation](prototype/teacher-student-directory-v1.2.html)
+- [Teacher Student Directory v1.2 — locked](prototype/teacher-student-directory-v1.2.html)
+- [T05 v1.2 locked specification](docs/locked-student-directory-v1.2.md)
 - [T05 v1.2 review notes](docs/student-directory-v1.2-review.md)
 - [T05 v1.1 review notes](docs/student-directory-v1.1-review.md)
 - [Teacher Student Profile v1 — previous review prototype](prototype/teacher-student-profile-v1.html)
-- [Teacher Student Profile v2 — current review prototype](prototype/teacher-student-profile-v2.html)
-- [T06 v2 review specification](docs/student-profile-v2-review.md)
-- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
-- [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
-- [Teacher Student Directory locked specification](docs/locked-student-directory.md)
+- [Teacher Student Profile v2 — locked](prototype/teacher-student-profile-v2.html)
+- [T06 v2 locked specification](docs/locked-student-profile-v2.md)
+- [Teacher Student Directory v1 — historical locked baseline](prototype/teacher-student-directory-v1.html)
+- [Teacher Student Directory v1 locked specification](docs/locked-student-directory.md)
 
 The Lesson Notes pop-up is part of the approved Class Register experience. Keep its existing appearance and interaction; do not redesign it.
 
