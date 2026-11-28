@@ -1,8 +1,8 @@
 # Celestial — Build Tracker
 
-**Last updated:** 27 November 2026  
+**Last updated:** 28 November 2026  
 **Current phase:** UX design + interactive prototype approval  
-**Next item:** Review T05 v1.2 direct navigation and T06 v2 profile
+**Next item:** T09 — Lesson Detail / Edit
 
 Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress · ⬜ not started · ⏸ blocked by policy/decision
 
@@ -29,8 +29,8 @@ Legend: ✅ complete/approved · 🔒 approved and locked · 🟡 in progress ·
 | T03 | Lesson capture / Class Register | 🔒 | Class Register v1.3 approved and locked |
 | T03a | Lesson Notes pop-up | 🔒 | Existing pop-up design approved; preserve it exactly unless user asks to change it |
 | T04 | Save result / session detail | 🔄 | Determine which confirmation/status details are integrated into register/history versus needing a separate view |
-| T05 | Student Directory | 🔒 / 🟡 | v1 remains approved and locked; v1.2 removes overview and opens T06 directly. See `docs/student-directory-v1.2-review.md` |
-| T06 | Student Profile — teacher view | 🟡 IN PROGRESS | Revised conditional guardian fields, unified editing and shared Additional Notes; prototype `prototype/teacher-student-profile-v2.html` awaiting review |
+| T05 | Student Directory | 🔒 | v1.2 approved and locked; direct row-to-profile navigation. See `docs/locked-student-directory-v1.2.md` |
+| T06 | Student Profile — teacher view | 🔒 | v2 approved and locked; conditional guardians, unified editing and shared Additional Notes. See `docs/locked-student-profile-v2.md` |
 | T07 | History — by date | 🔒 | Combined History screen v1.2; default view |
 | T08 | History — by student | 🔒 | Combined History screen v1.2; select a student, then show that student's dates; Present default, All records switch |
 | T09 | Lesson detail / edit | 🔄 | Detail pop-up pattern established; editing permissions/history behaviour to be confirmed in context |
@@ -73,11 +73,13 @@ Notes:
 | History prototype | `prototype/history-v1.2.html` | 🔒 v1.2 approved and committed |
 | Teacher Student Directory prototype | `prototype/teacher-student-directory-v1.html` | 🔒 v1 approved and committed |
 | Teacher Student Directory v1.1 | `prototype/teacher-student-directory-v1.1.html` | ⏸ Superseded by v1.2 |
-| Teacher Student Directory v1.2 | `prototype/teacher-student-directory-v1.2.html` | 🟡 Direct row-to-profile navigation review |
-| T05 v1.2 review notes | `docs/student-directory-v1.2-review.md` | 🟡 Under review |
+| Teacher Student Directory v1.2 | `prototype/teacher-student-directory-v1.2.html` | 🔒 Approved and locked |
+| T05 v1.2 locked specification | `docs/locked-student-directory-v1.2.md` | 🔒 |
+| T05 v1.2 review notes | `docs/student-directory-v1.2-review.md` | ✅ Approval record |
 | Teacher Student Profile v1 | `prototype/teacher-student-profile-v1.html` | ⏸ Superseded by v2 |
-| Teacher Student Profile v2 | `prototype/teacher-student-profile-v2.html` | 🟡 Revised profile for review |
-| Teacher Student Profile v2 specification | `docs/student-profile-v2-review.md` | 🟡 Revised decisions documented; pending approval |
+| Teacher Student Profile v2 | `prototype/teacher-student-profile-v2.html` | 🔒 Approved and locked |
+| T06 v2 locked specification | `docs/locked-student-profile-v2.md` | 🔒 |
+| Teacher Student Profile v2 review notes | `docs/student-profile-v2-review.md` | ✅ Approval record |
 | Lesson Notes pop-up specification | `docs/locked-lesson-notes-panel.md` | 🔒 Approved and committed |
 | History specification | `docs/locked-history.md` | 🔒 Approved and committed |
 | Whole project plan | `docs/PROJECT_PLAN.md` | ✅ Committed |
@@ -110,8 +112,8 @@ Notes:
 
 ## 6. Next actions
 
-1. Review and approve T05 Student Directory v1.1, preserving locked v1.
-2. Verify the Student ID hand-off into the matching T06 profile.
-3. Continue T06 review and obtain explicit approval before locking it.
-4. Proceed to the remaining teacher screens, then the administrator workspace.
-5. Complete UX sign-off before beginning production implementation.
+1. Design T09 Lesson Detail / Edit using the established detail/pop-up pattern. Preserve the locked Class Register Lesson Notes pop-up and History screen.
+2. Confirm which fields are visible, which can be edited, who can edit them and how corrections appear in history.
+3. Build and test the T09 interactive prototype; lock only after explicit user approval.
+4. Reconcile T01, T02, T04 and T10 against the approved daily workflows.
+5. Complete remaining teacher and administrator UX before production implementation is considered.
