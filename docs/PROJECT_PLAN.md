@@ -4,7 +4,9 @@
 **Repository:** `steph1420/Celestial-Music-Classes`  
 **Baseline date:** 27 November 2026  
 **Current phase:** Stage 4.5 — interactive UX prototyping and approval  
-**Next screen:** Teacher Student Profile — teacher view (T06)
+**Next screen:** Lesson Detail / Edit (T09)
+
+T05 Student Directory v1.2 and T06 Student Profile v2 are approved and locked. See `docs/locked-student-directory-v1.2.md` and `docs/locked-student-profile-v2.md`.
 
 ## 1. Product vision
 
@@ -280,4 +282,4 @@ A static diagram is not a substitute for the interactive prototype requested by 
 
 ## 12. Project continuation
 
-The immediate next UX task is **Teacher Student Profile (T06)**. Teacher Student Directory v1 is approved and locked. Start by discussing the profile's purpose and permitted content, then produce a working interactive prototype. Do not skip directly to the next screen after a text mock-up. The existing Register, Lesson Notes pop-up and History are locked.
+The immediate next UX task is **T09 — Lesson Detail / Edit**. Use the established detail/pop-up pattern. Clarify the full detail shown when opening a lesson from History, permitted edits, correction behaviour and audit visibility. Preserve the locked Class Register, Lesson Notes pop-up, History, T05 Student Directory v1.2 and T06 Student Profile v2. Build an interactive prototype and obtain explicit approval before locking.
