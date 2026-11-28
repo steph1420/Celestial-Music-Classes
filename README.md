@@ -33,17 +33,12 @@ Celestial is a mobile-first music-school management application for teachers and
 
 - [Class Register v1.3](prototype/class-register.html)
 - [History v1.2](prototype/history-v1.2.html)
-- [Teacher Student Directory v1 — locked baseline](prototype/teacher-student-directory-v1.html)
-- [Teacher Student Directory v1.1 — superseded review prototype](prototype/teacher-student-directory-v1.1.html)
 - [Teacher Student Directory v1.2 — locked](prototype/teacher-student-directory-v1.2.html)
 - [T05 v1.2 locked specification](docs/locked-student-directory-v1.2.md)
-- [T05 v1.2 review notes](docs/student-directory-v1.2-review.md)
-- [T05 v1.1 review notes](docs/student-directory-v1.1-review.md)
-- [Teacher Student Profile v1 — previous review prototype](prototype/teacher-student-profile-v1.html)
 - [Teacher Student Profile v2 — locked](prototype/teacher-student-profile-v2.html)
 - [T06 v2 locked specification](docs/locked-student-profile-v2.md)
-- [Teacher Student Directory v1 — historical locked baseline](prototype/teacher-student-directory-v1.html)
-- [Teacher Student Directory v1 locked specification](docs/locked-student-directory.md)
+
+Historical T05/T06 review prototypes remain in the repository but are not the current approved versions.
 
 The Lesson Notes pop-up is part of the approved Class Register experience. Keep its existing appearance and interaction; do not redesign it.
 
