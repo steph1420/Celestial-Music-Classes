@@ -3,7 +3,9 @@
 **Screen:** T06 — Teacher Student Profile  
 **Previous prototype:** v1 (prototype/teacher-student-profile-v1.html)  
 **Current prototype:** prototype/teacher-student-profile-v2.html  
-**Status:** Implemented for review; not approved or locked.
+**Status:** 🔒 Approved and locked by user on 28 November 2026.
+
+Locked specification: `docs/locked-student-profile-v2.md`.
 
 ## Purpose and layout
 One scrollable, teacher-facing student profile. T05 opens it directly when a student row is selected. The profile header contains optional photo/initials, student name, class, calculated age, status, Student ID and the single **Edit profile** action.
