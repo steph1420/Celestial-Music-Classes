@@ -388,6 +388,12 @@ function renderList(){
 function clearFilters(){
   query = ''; subjectFilter = 'All'; statusFilter = 'Active'; renderDirectory();
 }
+function openFullProfile(id){
+  const selected=state.students.find(item=>item.id===id);
+  if(!selected){toast('Student record not found.');return}
+  const url='https://steph1420.github.io/Celestial-Music-Classes/student-profile.html?studentId='+encodeURIComponent(selected.id)+'&v=profile-v2-20261128';
+  window.location.href=url;
+}
 function addStudent(){
   const subjects = ['Piano','Vocals','Guitar'].map(value=>
     '<label class="dir-subject-option"><input type="checkbox" name="newSubject" value="' + value + '"><span>' + value + '</span></label>'
@@ -413,7 +419,7 @@ function saveNewStudent(event){
   const before = snapshot();
   const number = state.students.reduce((max,s)=>Math.max(max,Number(String(s.id).replace(/\D/g,''))||0),0)+1;
   const studentId='STU-'+String(number).padStart(4,'0');
-  state.students.push({id:studentId,name:name,status:status,enrolments:chosen.map(subject=>({subject:subject,status:status}))});
+  state.students.push({id:studentId,name:name,status:status,parentInfoEnabled:false,additionalNotes:'',enrolments:chosen.map(subject=>({subject:subject,status:status}))});
   commitDirectory('Add student · ' + name,before);
   closeModal(); renderDirectory(); toast('Student added to this demo roster.');
 }
