@@ -107,7 +107,7 @@ Read `docs/PROJECT_PLAN.md`, `docs/BUILD_TRACKER.md`, `docs/ARCHITECTURE_BASELIN
 
 ## 9. Important unresolved gates
 
-See `docs/OPEN_DECISIONS.md`. Especially authentication/deployment identity, cross-teacher note visibility, timezone, currency, future session reassignment, provisional attendance, billing/no-show/tax/refund rules, group sessions and PWA proof.
+See `docs/OPEN_DECISIONS.md`. Especially authentication/deployment identity, timezone, currency, future session reassignment, provisional attendance, billing/no-show/tax/refund rules, group sessions, guardian admission requirements and PWA proof.
 
 ## 10. Handoff prompt
 
