@@ -126,7 +126,7 @@ This file records approved decisions and constraints. New decisions should be ap
 - When enabled, at least one guardian must be linked and every listed guardian must have a phone number. Phone is the only mandatory guardian field; guardian name, relationship, separate WhatsApp and email are optional.
 - Additional Notes is one continuous multiline note, separate from lesson notes, shared with teachers assigned to the student.
 - Preserve the previously approved profile decisions: optional photo; limited student-field editing; own enrolments first and other subjects read-only; no Learning Overview; attendance summary; Call, WhatsApp, SMS and optional Email; explicit save; audit trail; no finance information.
-- T05 v1.2 and T06 v2 are prototypes for review, not locked or production implementations. See docs/student-directory-v1.2-review.md and docs/student-profile-v2-review.md.
+- At the time of this planning entry, T05 v1.2 and T06 v2 were review prototypes. Their subsequent approval and lock on 28 November 2026 is recorded in the later section below. Neither prototype approval authorises production implementation.
 
 
 ## T05 Student Directory v1.2 and T06 Student Profile v2 — approved and locked (28 November 2026)
