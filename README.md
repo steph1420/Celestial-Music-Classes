@@ -14,8 +14,9 @@ Celestial is a mobile-first music-school management application for teachers and
 - **Lesson Notes pop-up: existing design approved and locked.**
 - **Teacher History — By date and By student: approved and locked (prototype v1.2).**
 - **Teacher Student Directory v1: approved and locked.**
-- **Teacher Student Directory v1.1: Student ID + full-profile navigation refinement under review.**
-- **Teacher Student Profile (T06): v1 prototype under review; not yet locked.**
+- **Teacher Student Directory v1.1: superseded review refinement.**
+- **Teacher Student Directory v1.2: direct row-to-profile navigation; under review.**
+- **Teacher Student Profile (T06): v2 prototype under review; not yet locked.**
 - Production implementation, backend sync, authentication and deployment: not yet authorised/completed.
 
 ## Start here
@@ -33,9 +34,13 @@ Celestial is a mobile-first music-school management application for teachers and
 - [Class Register v1.3](prototype/class-register.html)
 - [History v1.2](prototype/history-v1.2.html)
 - [Teacher Student Directory v1 — locked baseline](prototype/teacher-student-directory-v1.html)
-- [Teacher Student Directory v1.1 — review prototype](prototype/teacher-student-directory-v1.1.html)
+- [Teacher Student Directory v1.1 — superseded review prototype](prototype/teacher-student-directory-v1.1.html)
+- [Teacher Student Directory v1.2 — direct profile navigation](prototype/teacher-student-directory-v1.2.html)
+- [T05 v1.2 review notes](docs/student-directory-v1.2-review.md)
 - [T05 v1.1 review notes](docs/student-directory-v1.1-review.md)
-- [Teacher Student Profile v1 — review prototype](prototype/teacher-student-profile-v1.html)
+- [Teacher Student Profile v1 — previous review prototype](prototype/teacher-student-profile-v1.html)
+- [Teacher Student Profile v2 — current review prototype](prototype/teacher-student-profile-v2.html)
+- [T06 v2 review specification](docs/student-profile-v2-review.md)
 - [Teacher Student Directory locked specification](docs/locked-student-directory.md)
 - [Teacher Student Directory v1](prototype/teacher-student-directory-v1.html)
 - [Teacher Student Directory locked specification](docs/locked-student-directory.md)
