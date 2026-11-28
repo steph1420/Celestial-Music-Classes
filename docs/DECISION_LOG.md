@@ -127,3 +127,12 @@ This file records approved decisions and constraints. New decisions should be ap
 - Additional Notes is one continuous multiline note, separate from lesson notes, shared with teachers assigned to the student.
 - Preserve the previously approved profile decisions: optional photo; limited student-field editing; own enrolments first and other subjects read-only; no Learning Overview; attendance summary; Call, WhatsApp, SMS and optional Email; explicit save; audit trail; no finance information.
 - T05 v1.2 and T06 v2 are prototypes for review, not locked or production implementations. See docs/student-directory-v1.2-review.md and docs/student-profile-v2-review.md.
+
+
+## T05 Student Directory v1.2 and T06 Student Profile v2 — approved and locked (28 November 2026)
+- User approved both published prototypes.
+- T05 v1.2 is locked at `prototype/teacher-student-directory-v1.2.html`; specification: `docs/locked-student-directory-v1.2.md`. Selecting a student row opens the matching T06 profile directly; there is no overview modal.
+- T06 v2 is locked at `prototype/teacher-student-profile-v2.html`; specification: `docs/locked-student-profile-v2.md`. One Edit profile action opens one full-page form; Save/Cancel appear at the end.
+- Parent/Guardian information is controlled per child by a checkbox. When unchecked, the read-only section is omitted while existing guardian links/data are retained. When enabled, at least one guardian must be linked and each listed guardian must have a phone number; other guardian fields are optional.
+- Additional Notes is one continuous note shared with teachers assigned to the student.
+- Next teacher screen: T09 Lesson Detail / Edit. Preserve the locked Class Register Lesson Notes pop-up and History screen.
