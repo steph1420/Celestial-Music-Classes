@@ -4,7 +4,7 @@
 **Current repository:** https://github.com/steph1420/Celestial-Music-Classes  
 **Branch:** `main`  
 **Project stage:** UX screen-by-screen prototyping and approval  
-**Current screen:** T05 Student Directory v1.1 navigation refinement, awaiting user review
+**Current screen:** T05 v1.2 direct navigation + T06 v2 profile redesign, awaiting user review
 
 ## 1. Immediate status
 
@@ -67,18 +67,19 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Current task — Review T05 Student Directory v1.1
+## 6. Current task — Review T05 v1.2 and T06 v2
 
-- The original T05 v1 remains approved and locked; do not overwrite it.
-- T05 v1.1 adds Student ID to the Student overview modal and an Open full student profile action.
-- The action passes the selected Student_ID to T06 using the `studentId` query parameter.
-- T05 and T06 seed data use matching IDs for the same eight students. Legacy v1 localStorage IDs are migrated; newly added demo students are given a stable ID and a blank matching profile is created on demand.
-- An unknown ID must never fall back to another student's profile.
-- Review prototype: `prototype/teacher-student-directory-v1.1.html`.
-- Review notes: `docs/student-directory-v1.1-review.md`.
-- T06 profile prototype: `prototype/teacher-student-profile-v1.html`.
-- Automated validation checks all prototype JavaScript, matching T05/T06 seeded IDs and the modal-to-profile ID hand-off.
-- Do not lock v1.1 until the user reviews and approves it.
+- Preserve locked T05 v1, Class Register v1.3, Lesson Notes and History v1.2 unchanged.
+- T05 v1.2: student row opens the matching T06 profile directly; no Student overview modal.
+- T06 v2: one global Edit profile action and one full-page form. Save/Cancel at the end.
+- Parent/Guardian: checkbox per child. When unchecked, omit the entire section in read-only profile; hide but retain existing links. When enabled, at least one guardian is required and every guardian must have a phone number. Other guardian fields are optional.
+- Additional Notes: one multiline note, separate from lesson notes, shared with assigned teachers.
+- Other existing T06 decisions remain: optional photo, limited student-field editing, own enrolments first, other enrolments read-only, no Learning Overview, attendance summary, Call/WhatsApp/SMS and optional Email, audit trail, no finance data.
+- T05 prototype: `prototype/teacher-student-directory-v1.2.html`.
+- T06 prototype: `prototype/teacher-student-profile-v2.html`.
+- Specs: `docs/student-directory-v1.2-review.md` and `docs/student-profile-v2-review.md`.
+- Automated deployment checks cover JavaScript syntax, direct row navigation, absence of the overview modal, matching seeded Student IDs, unified editing and conditional guardian/notes requirements.
+- Do not lock either new version until the user explicitly approves.
 
 ## 7. Overall plan and architecture
 
