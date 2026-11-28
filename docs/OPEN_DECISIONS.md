@@ -5,7 +5,6 @@ These items were explicitly unresolved in Technical Blueprint v1.1 / Application
 | ID | Topic | Question requiring a decision | Impact |
 |---|---|---|---|
 | AUTH-01 | Authentication/deployment | How are teacher identities verified, and which Apps Script deployment mode is used? | Blocker for multi-user production |
-| AUTH-02 | Teacher note visibility | Can teachers see other teachers' lesson notes/remarks, or only their own? | Blocker for permissions |
 | ENR-01 | Future sessions on teacher reassignment | Are old future sessions left on the old enrolment for admin review, or is an explicit bulk reassignment permitted? | Before reassignment release |
 | ATT-01 | Provisional expiry | How long can future/overdue provisional attendance remain before reminder/escalation? | Before automation |
 | BILL-01 | Student-level per-lesson scope | Charge once per student per calendar day or per eligible Session_Enrolment across all subjects? | Blocker for student-level per-lesson billing |
