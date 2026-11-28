@@ -283,7 +283,7 @@ function loadState(){
    saved.students.forEach(record=>{
     const legacyId=record.id==='s1'?'STU-0002':record.id;
     const target=base.students.find(item=>item.id===legacyId);
-    if(target){Object.assign(target,record,{id:target.id});if(typeof target.parentInfoEnabled!=='boolean')target.parentInfoEnabled=(target.guardianLinks||[]).length>0;if(typeof target.additionalNotes!=='string')target.additionalNotes='';}
+    if(target){Object.assign(target,record,{id:target.id});if(typeof record.parentInfoEnabled==='boolean')target.parentInfoEnabled=record.parentInfoEnabled;else target.parentInfoEnabled=(record.guardianLinks||[]).length>0;if(typeof record.additionalNotes==='string')target.additionalNotes=record.additionalNotes;else target.additionalNotes='';}
    });
   }
  }catch(e){}
