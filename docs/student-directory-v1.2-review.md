@@ -4,7 +4,9 @@
 **Locked baseline:** v1 (prototype/teacher-student-directory-v1.html)  
 **Prior refinement:** v1.1  
 **Current prototype:** prototype/teacher-student-directory-v1.2.html  
-**Status:** Implemented for review; not locked.
+**Status:** 🔒 Approved and locked by user on 28 November 2026.
+
+Locked specification: `docs/locked-student-directory-v1.2.md`.
 
 ## Changes
 - Selecting a student row opens that student's T06 profile directly.
