@@ -117,3 +117,13 @@ This file records approved decisions and constraints. New decisions should be ap
 - If a newly added directory student has no pre-seeded profile, T06 creates a blank demo profile from the same directory record and its enrolments.
 - T05 v1.1 is a refinement for user review; it is not locked until user approval. See `docs/student-directory-v1.1-review.md`.
 
+
+
+## T05 v1.2 and T06 v2 — revised profile decisions (28 November 2026)
+- T05 v1 remains approved and locked. T05 v1.2 is a separate review prototype; selecting a student row opens that student's T06 profile directly. Remove the Student overview modal and intermediate action.
+- T06 v2 has one global Edit profile action. Personal details, conditional parent/guardian information and Additional Notes are edited in one full-page form. Save and Cancel appear at the end of the form; no sticky action bar.
+- Parent/guardian information is enabled per child by a checkbox. When unchecked, omit the entire Parent / Guardian section from the read-only profile. Unchecking hides the information but retains the child's guardian links and shared guardian records; re-enabling restores them.
+- When enabled, at least one guardian must be linked and every listed guardian must have a phone number. Phone is the only mandatory guardian field; guardian name, relationship, separate WhatsApp and email are optional.
+- Additional Notes is one continuous multiline note, separate from lesson notes, shared with teachers assigned to the student.
+- Preserve the previously approved profile decisions: optional photo; limited student-field editing; own enrolments first and other subjects read-only; no Learning Overview; attendance summary; Call, WhatsApp, SMS and optional Email; explicit save; audit trail; no finance information.
+- T05 v1.2 and T06 v2 are prototypes for review, not locked or production implementations. See docs/student-directory-v1.2-review.md and docs/student-profile-v2-review.md.
