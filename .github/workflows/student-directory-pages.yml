@@ -7,7 +7,9 @@ on:
     paths:
       - 'prototype/teacher-student-directory-v1.html'
       - 'prototype/teacher-student-directory-v1.1.html'
+      - 'prototype/teacher-student-directory-v1.2.html'
       - 'prototype/teacher-student-profile-v1.html'
+      - 'prototype/teacher-student-profile-v2.html'
       - 'prototype/class-register.html'
       - 'prototype/history-v1.2.html'
       - '.github/workflows/student-directory-pages.yml'
@@ -42,7 +44,9 @@ jobs:
           for name in [
               'prototype/teacher-student-directory-v1.html',
               'prototype/teacher-student-directory-v1.1.html',
+              'prototype/teacher-student-directory-v1.2.html',
               'prototype/teacher-student-profile-v1.html',
+              'prototype/teacher-student-profile-v2.html',
               'prototype/class-register.html',
               'prototype/history-v1.2.html',
           ]:
@@ -52,47 +56,29 @@ jobs:
               import subprocess
               subprocess.run(['node', '--check', '/tmp/prototype-check.js'], check=True)
               print('JavaScript syntax OK:', name)
-          directory = Path('prototype/teacher-student-directory-v1.1.html').read_text()
-          profile = Path('prototype/teacher-student-profile-v1.html').read_text()
-          required_directory = ['function openFullProfile', 'Student ID', 'Open full student profile', 'STU-0001']
-          required_profile = ["params.get('studentId')", 'directory.students.find', "id:'STU-0001'", "id:'STU-0008'"]
-          assert all(token in directory for token in required_directory), 'T05 profile link / Student ID contract is incomplete'
-          assert all(token in profile for token in required_profile), 'T06 shared Student ID / directory fallback contract is incomplete'
+          directory = Path('prototype/teacher-student-directory-v1.2.html').read_text()
+          profile = Path('prototype/teacher-student-profile-v2.html').read_text()
+          required_directory = ['function openFullProfile', "onclick=\"openFullProfile(this.dataset.id)\"", 'function showStudent']
+          assert all(token in directory for token in required_directory), 'T05 direct profile navigation is incomplete'
+          assert 'Student overview' not in directory, 'T05 quick overview must be removed'
+          assert 'function showStudent(id)' not in directory, 'T05 overview modal function must be removed'
+          required_profile = ["params.get('studentId')", 'directory.students.find', 'function renderEdit()', 'function saveProfile(event)', 'parentInfoEnabled', 'additionalNotes', 'Enter a phone number for every parent / guardian.', 'Additional Notes', 'Shared with assigned teachers']
+          assert all(token in profile for token in required_profile), 'T06 profile requirements are incomplete'
+          assert profile.count('onclick="editStudent()"') == 1, 'T06 must have one Edit profile action'
+          assert 'function editGuardian(id)' not in profile and 'function saveGuardian(id)' not in profile, 'T06 must use unified editing rather than separate guardian edit dialogs'
           import re
           directory_records = dict(re.findall(r"\{id:'(STU-\d{4,})',name:'([^']+)'", directory))
           profile_records = dict(re.findall(r"\{id:'(STU-\d{4,})',name:'([^']+)'", profile))
           assert directory_records == profile_records, 'T05 and T06 seeded Student IDs/names do not match'
-          print('T05/T06 seeded student records match')
-
-          node_test = r"""
-          const fs = require('fs');
-          const vm = require('vm');
-          const source = fs.readFileSync('prototype/teacher-student-directory-v1.1.html','utf8');
-          const show = source.match(/function showStudent\(id\)\{[\s\S]*?\n\}/);
-          const open = source.match(/function openFullProfile\(id\)\{[\s\S]*?\n\}/);
-          if (!show || !open) throw new Error('Student overview/profile functions missing');
-          let captured;
-          const ctx = {
-            state: { students: [{id:'STU-0002',name:'Ananya Das',status:'Active',enrolments:[{subject:'Piano'}]}] },
-            esc: value => String(value),
-            showModal: (...args) => { captured = args; }
-          };
-          vm.runInNewContext(show[0] + "; showStudent('STU-0002')", ctx);
-          if (!captured[2].includes("onclick=\"openFullProfile('STU-0002')\">")) throw new Error('Profile CTA does not carry the selected Student ID');
-          const routeContext = {state:ctx.state,closeModal:()=>{},toast:()=>{},window:{location:{}}};
-          vm.runInNewContext(open[0] + "; openFullProfile('STU-0002')", routeContext);
-          if (!routeContext.window.location.href.includes('studentId=STU-0002')) throw new Error('Profile route lost the selected Student ID');
-          console.log('Student overview action passes the selected ID');
-          """
-          subprocess.run(['node', '-e', node_test], check=True)
+          print('T05/T06 direct navigation and seeded student records match')
           PY
 
       - name: Prepare preview site
         run: |
           mkdir -p _site/prototype
-          cp prototype/teacher-student-directory-v1.1.html _site/index.html
-          cp prototype/teacher-student-directory-v1.1.html _site/student-directory.html
-          cp prototype/teacher-student-profile-v1.html _site/student-profile.html
+          cp prototype/teacher-student-directory-v1.2.html _site/index.html
+          cp prototype/teacher-student-directory-v1.2.html _site/student-directory.html
+          cp prototype/teacher-student-profile-v2.html _site/student-profile.html
           cp prototype/class-register.html _site/prototype/class-register.html
           cp prototype/history-v1.2.html _site/prototype/history-v1.2.html
           touch _site/.nojekyll
