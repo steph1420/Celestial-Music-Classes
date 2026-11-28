@@ -4,23 +4,26 @@
 **Current repository:** https://github.com/steph1420/Celestial-Music-Classes  
 **Branch:** `main`  
 **Project stage:** UX screen-by-screen prototyping and approval  
-**Current screen:** T05 v1.2 direct navigation + T06 v2 profile redesign, awaiting user review
+**Current screen:** T09 Lesson Detail / Edit — next to design
 
 ## 1. Immediate status
 
-Four teacher-facing experiences are approved:
+Five teacher-facing experiences are approved:
 
 1. **Class Register v1.3** — approved and locked.
 2. **Lesson Notes pop-up** — current design explicitly approved; retain it, do not reinvent it.
 3. **History v1.2** — approved and locked, containing both By date and By student views.
-4. **Teacher Student Directory v1** — approved and locked; specification: `docs/locked-student-directory.md`; prototype: `prototype/teacher-student-directory-v1.html`.
+4. **Teacher Student Directory v1.2** — approved and locked; specification: `docs/locked-student-directory-v1.2.md`; prototype: `prototype/teacher-student-directory-v1.2.html`.
+5. **Teacher Student Profile v2** — approved and locked; specification: `docs/locked-student-profile-v2.md`; prototype: `prototype/teacher-student-profile-v2.html`.
 
-Teacher Student Directory v1 remains approved and locked. T05 v1.1 adds Student ID + Open full student profile and matches T05/T06 records; review notes: `docs/student-directory-v1.1-review.md`. T06 profile prototype: `prototype/teacher-student-profile-v1.html`.
+T05 v1 remains preserved as a historical locked baseline. The current locked version is T05 v1.2, which opens T06 directly from the student row. T06 v2 is also approved and locked. Previous review prototypes v1/v1.1 remain in the repository as historical files.
 
 ## 2. Files in GitHub
 
 - `prototype/class-register.html` — Class Register v1.3 (existing approved file; do not overwrite casually).
-- `prototype/history-v1.2.html` — History v1.2 (added in this handoff update).
+- `prototype/history-v1.2.html` — History v1.2 (approved and locked).
+- `prototype/teacher-student-directory-v1.2.html` — current locked T05 Student Directory.
+- `prototype/teacher-student-profile-v2.html` — current locked T06 Student Profile.
 - `docs/locked-class-register.md` — locked Class Register specification.
 - `docs/locked-lesson-notes-panel.md` — locked pop-up decision.
 - `docs/locked-history.md` — locked History behaviour.
@@ -67,19 +70,15 @@ The user said the existing pop-up is perfect and there is no need to reinvent th
 
 The user tested v1.2 and said: **“Looks perfect!”** Treat it as approved and locked.
 
-## 6. Current task — Review T05 v1.2 and T06 v2
+## 6. Next task — T09 Lesson Detail / Edit
 
-- Preserve locked T05 v1, Class Register v1.3, Lesson Notes and History v1.2 unchanged.
-- T05 v1.2: student row opens the matching T06 profile directly; no Student overview modal.
-- T06 v2: one global Edit profile action and one full-page form. Save/Cancel at the end.
-- Parent/Guardian: checkbox per child. When unchecked, omit the entire section in read-only profile; hide but retain existing links. When enabled, at least one guardian is required and every guardian must have a phone number. Other guardian fields are optional.
-- Additional Notes: one multiline note, separate from lesson notes, shared with assigned teachers.
-- Other existing T06 decisions remain: optional photo, limited student-field editing, own enrolments first, other enrolments read-only, no Learning Overview, attendance summary, Call/WhatsApp/SMS and optional Email, audit trail, no finance data.
-- T05 prototype: `prototype/teacher-student-directory-v1.2.html`.
-- T06 prototype: `prototype/teacher-student-profile-v2.html`.
-- Specs: `docs/student-directory-v1.2-review.md` and `docs/student-profile-v2-review.md`.
-- Automated deployment checks cover JavaScript syntax, direct row navigation, absence of the overview modal, matching seeded Student IDs, unified editing and conditional guardian/notes requirements.
-- Do not lock either new version until the user explicitly approves.
+- T05 Student Directory v1.2 and T06 Student Profile v2 are approved and locked.
+- T09 is the detail/edit experience reached when a teacher opens a lesson record from History.
+- Reuse the established detail/pop-up pattern. Do not alter the locked Class Register Lesson Notes pop-up or History screen.
+- Define the complete lesson detail shown, permitted edit fields, who may edit a record, correction workflow and how changes are recorded in history/audit.
+- Distinguish viewing a historical record from deliberately editing it. Preserve the original saved record context and trace corrections.
+- Build an interactive prototype, test the full flow from History, then obtain explicit approval before locking.
+- Tracker: `docs/BUILD_TRACKER.md`; screen list: `docs/UX_BASELINE.md`.
 
 ## 7. Overall plan and architecture
 
@@ -112,4 +111,4 @@ See `docs/OPEN_DECISIONS.md`. Especially authentication/deployment identity, cro
 
 ## 10. Handoff prompt
 
-Continue Celestial from this repository and these documents. History v1.2 and Class Register v1.3 are approved and locked. Review the published T05 Student Directory v1.1 refinement. Do not overwrite the locked v1 baseline. Verify the profile link opens the same Student_ID in T06. Do not start production coding yet.
+Continue Celestial from this repository and these documents. Class Register v1.3, Lesson Notes pop-up, History v1.2, T05 Student Directory v1.2 and T06 Student Profile v2 are approved and locked. Continue with T09 Lesson Detail / Edit. Preserve all locked screens. Do not start production coding yet.
