@@ -10,11 +10,11 @@ This inventory is based on the Complete Application UX v1.0, then updated with t
 | T02 | Record lesson — context | Streamlined into the approved Class Register context; review if any separate step remains useful |
 | T03 | Lesson record editor | Implemented as the approved Class Register + integrated Lesson Notes pop-up |
 | T04 | Save result / session detail | To reconcile; avoid duplicate confirmation screens if status can be shown in the current workflow |
-| T05 | Student directory | Approved and locked as Teacher Student Directory v1; see `docs/locked-student-directory.md` |
-| T06 | Student profile — teacher view | v1 prototype created for review; design decisions recorded in `docs/DECISION_LOG.md` |
+| T05 | Student directory | v1.2 approved and locked; student row opens the matching T06 profile directly. See `docs/locked-student-directory-v1.2.md` |
+| T06 | Student profile — teacher view | v2 approved and locked; conditional guardian information, one Edit profile form and shared Additional Notes. See `docs/locked-student-profile-v2.md` |
 | T07 | History — by date | Combined into approved History screen, default mode |
 | T08 | History — by student | Combined into approved History screen, select a student then inspect that student's timeline |
-| T09 | Lesson detail/edit | Reuse existing detail/pop-up pattern; editing and change-history permissions require confirmation |
+| T09 | Lesson detail/edit | Next screen to design; reuse established detail/pop-up pattern. Confirm fields, edit permissions and correction history without changing locked Lesson Notes or History. |
 | T10 | Profile & preferences | Pending |
 
 ## Administrator workspace — 17 screens
@@ -61,6 +61,6 @@ This inventory is based on the Complete Application UX v1.0, then updated with t
 - History v1.2: `prototype/history-v1.2.html`
 - Lesson Notes pop-up: integrated into the Class Register; do not redesign.
 
-## Locked Teacher Student Directory
+## Locked Teacher Student Directory and Profile
 
-The T05 Student Directory v1 prototype is approved and locked: `prototype/teacher-student-directory-v1.html`. Its detailed behaviour and prototype limitations are recorded in `docs/locked-student-directory.md`. The next teacher screen is T06 Student Profile — teacher view.
+T05 Student Directory v1.2 is approved and locked: `prototype/teacher-student-directory-v1.2.html`; specification: `docs/locked-student-directory-v1.2.md`. T06 Student Profile v2 is approved and locked: `prototype/teacher-student-profile-v2.html`; specification: `docs/locked-student-profile-v2.md`. The next teacher screen is T09 Lesson Detail / Edit.
